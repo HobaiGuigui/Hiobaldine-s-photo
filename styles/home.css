@@ -1,0 +1,665 @@
+body {
+
+  background-color: lightpink;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #32cf93;
+  text-decoration: none;
+}
+
+.justify-c-c{
+  justify-content: center!important;
+}
+
+.align-c-c{
+  align-content: center!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Calibri (Corpo)';
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+.section-header {
+  padding-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Calibri (Corpo)';
+}
+
+.section-header h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #5bd9a9;
+  margin: 4px 10px;
+}
+
+.section-header p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  color: #fff;
+}
+
+/* Special Logo */
+@media (max-width: 1920px) {
+  .header .logo img {
+
+}
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 5px 2px;
+  background-color: #000;
+}
+
+.header .logo {
+  transition: 0.3s;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 8px;
+}
+
+
+
+.header .logo i {
+  font-size: 32px;
+  margin-right: 8px;
+  line-height: 0;
+}
+
+@media (max-width: 575px) {
+  .header .logo h1 {
+    font-size: 26px;
+  }
+
+  .header .logo i {
+    font-size: 24px;
+  }
+}
+
+.header .header-social-links {
+  padding-right: 10%;
+}
+
+.header .header-social-links a {
+  color: #0a0a0a;
+  position: relative;
+  padding-left: 35px;
+  display: flex;
+  margin-right: 25px;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 0px;
+  transition: 0.3s;
+  font-size: 18px;
+
+}
+
+
+.header .header-social-links a:hover {
+  color: #fff;
+}
+
+
+@media (max-width: 575px) {
+  .header .header-social-links a {
+/*    padding: 5px;*/
+    justify-content: space-between;
+  }
+}
+
+/*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+@media (min-width: 991px) {
+  .menuBar {
+    padding: 0;
+  }
+
+  .menuBar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .menuBar li {
+    position: relative;
+  }
+
+  .menuBar a,
+  .menuBar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Calibri (Corpo)";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .menuBar a i,
+  .menuBar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+
+  .menuBar a:hover,
+  .menuBar .active,
+  .menuBar .active:focus,
+  .menuBar li:hover>a {
+    color: #fff;
+  }
+
+  .menuBar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+
+  .menuBar .dropdown ul li {
+    min-width: 200px;
+  }
+
+  .menuBar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 400;
+  }
+
+  .menuBar .dropdown ul a i {
+    font-size: 12px;
+  }
+
+  .menuBar .dropdown ul a:hover,
+  .menuBar .dropdown ul .active:hover,
+  .menuBar .dropdown ul li:hover>a {
+    color: #fff;
+  }
+
+  .menuBar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .menuBar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+
+  .menuBar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 991px) {
+#menuBar, ul {
+  display: flex;
+   list-style-type: disc; 
+  align-items: center;
+  justify-content: space-between;
+/*  padding: 10px 0 10px 10px;*/
+  family: 'Calibri (Corpo)';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #fafafa;
+  list-style: none;
+/*  text-size-adjust: auto;*/
+}
+}
+
+
+
+@media (max-width: 1279px) {
+
+  .menuBar a,
+  .menuBar a:focus {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 2px;
+    font-family: "Calibri (Corpo)";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fafafa;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  /* .menuBar a i,
+  .menuBar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  } */
+
+  .menuBar a:hover,
+  .menuBar .active,
+  .menuBar .active:focus,
+  .menuBar li:hover>a {
+    color: #fff;
+  }
+
+  .menuBar .dropdown ul,
+  .menuBar .dropdown .dropdown ul {
+    position: static;
+    display: none;
+    padding: 10px 0;
+    margin: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid black;
+  }
+
+  .menuBar .dropdown>.dropdown-active,
+  .menuBar .dropdown .dropdown>.dropdown-active {
+    display: block;
+  }
+
+  .mobile-nav-show {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    z-index: 9999;
+    margin: 0 10px 0 10px;
+  }
+
+  .mobile-nav-hide {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+  }
+
+  .mobile-nav-active {
+    overflow: ;
+  }
+
+  .mobile-nav-active .menuBar {
+    right: 0;
+  }
+
+  .mobile-nav-active .menuBar:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(22, 23, 24, 0.8);
+    z-index: 9996;
+  }
+}
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.gallery {
+  margin-top: 40px;
+}
+
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery .gallery-item img {
+  transition: 0.3s;
+}
+
+.gallery .gallery-links {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.gallery .gallery-links .preview-link,
+.gallery .gallery-links .details-link {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  line-height: 1.2;
+  margin: 30px 8px 0 8px;
+}
+
+.gallery .gallery-links .preview-link:hover,
+.gallery .gallery-links .details-link:hover {
+  color: #fff;
+}
+
+.gallery .gallery-links .details-link {
+  font-size: 30px;
+  line-height: 0;
+}
+
+.gallery .gallery-item:hover .gallery-links {
+  opacity: 1;
+}
+
+.gallery .gallery-item:hover .preview-link,
+.gallery .gallery-item:hover .details-link {
+  margin-top: 0;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.glightbox-clean .gslide-description {
+  background: #222425;
+}
+
+.glightbox-clean .gslide-title {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Gallery Single Section
+--------------------------------------------------------------*/
+.gallery-single .portfolio-details-slider img {
+  width: 100%;
+}
+
+
+.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.gallery-single .swiper-button-prev,
+.gallery-single .swiper-button-next {
+  width: 48px;
+  height: 48px;
+}
+
+.gallery-single .swiper-button-prev:after,
+.gallery-single .swiper-button-next:after {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.gallery-single .swiper-button-prev:hover:after,
+.gallery-single .swiper-button-next:hover:after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 575px) {
+
+  .gallery-single .swiper-button-prev,
+  .gallery-single .swiper-button-next {
+    display: none;
+  }
+}
+
+.gallery-single .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family: var(--font-secondary);
+}
+
+.gallery-single .portfolio-info h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+
+.gallery-single .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.gallery-single .portfolio-info ul li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.gallery-single .portfolio-info ul strong {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #6b7075;
+  font-size: 14px;
+}
+
+.gallery-single .portfolio-info .btn-visit {
+  padding: 8px 40px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.gallery-single .portfolio-info .btn-visit:hover {
+  background: #2cbc85;
+}
+
+.gallery-single .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.gallery-single .portfolio-description p {
+  padding: 0;
+}
+
+.gallery-single .portfolio-description .clientes-item {
+  padding: 30px 30px 0 30px;
+  position: relative;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.gallery-single .portfolio-description .clientes-item .clientes-img {
+  width: 90px;
+  border-radius: 50px;
+  border: 6px solid #2e3133;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.gallery-single .portfolio-description .clientes-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  padding-top: 20px;
+}
+
+.gallery-single .portfolio-description .clientes-item h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.gallery-single .portfolio-description .clientes-item .quote-icon-left,
+.gallery-single .portfolio-description .clientes-item .quote-icon-right {
+  color: #5bd9a9;
+  font-size: 26px;
+  line-height: 0;
+}
+
+.gallery-single .portfolio-description .clientes-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.gallery-single .portfolio-description .clientes-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.gallery-single .portfolio-description .clientes-item p {
+  font-style: italic;
+  margin: 0 0 15px 0 0 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# perfil Section
+--------------------------------------------------------------*/
+.perfil {
+  width: 100%;
+  min-height: 30vh;
+  background: #0a0a0a;
+  background-size: cover;
+  position: relative;
+  padding: 140px 0 60px 0;
+}
+
+.perfil h2 {
+  margin: 0 0 10px 0;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.perfil h2 span {
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.perfil h2 span:before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: "Calibri (Corpo)";
+  z-index: -1;
+}
+
+.perfil p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.perfil .btn-get-started {
+  font-family: "Calibri (Corpo)";
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: #fff;
+  background: "Calibri (Corpo)";
+}
+
+
+@media (max-width: 768px) {
+  .perfil h2 {
+    font-size: 28px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  margin-top: 15px;
+  padding: 30px 0;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer .copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+i.bi.bi-arrows-angle-expand {}
